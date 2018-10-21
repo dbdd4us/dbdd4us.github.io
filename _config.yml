@@ -1,0 +1,21 @@
+# Site settings
+title: "dbdd4us's blog"
+description: "dbdd4us's blog"
+baseurl: ""
+url: ""
+author: "dbdd4us"
+
+# Build settings
+kramdown:
+  input: GFM
+permalink: pretty
+
+# Third-party services
+# just leave empty to disable it
+google_analytics: UA-127820974-1
+disqus_shortname: 
+
+plugins:
+  - jekyll-sitemap
+
+exclude: ["LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script"]
