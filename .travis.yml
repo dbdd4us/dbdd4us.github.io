@@ -4,6 +4,7 @@ rvm:
 
 before_script:
   - chmod +x ./script/cibuild.sh
+  - git clone https://${GH_REF} _site
 
 script: ./script/cibuild.sh
 
@@ -21,7 +22,6 @@ cache: bundler
 
 after_script:
   - cd _site
-  - git init
   - git config user.name "dbdd4us"
   - git config user.email "wangtong2712@gmail.com"
   - git add .
